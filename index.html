@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
+    <!-- CSS do projeto -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -13,6 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- JS do projeto -->
     <script src="JS/script.js" defer></script>
   </head>
   <body>
@@ -21,33 +25,29 @@
         <h1>Todo List</h1>
       </header>
       <form id="todo-form">
-        <p>Adicione sua tarefa</p>
+        <p>Adicione a sua terafa:</p>
         <div class="form-control">
-          <input
-            type="text"
-            id="todo-input"
-            placeholder="O que você vai fazer?"
-          />
+          <input type="text" id="todo-input" placeholder="O que você vai fazer?">
           <button type="submit">
-            <i class="fa-thin fa-plus"></i>
+            <i class="fa-solid fa-square-plus"></i>
           </button>
         </div>
-      </form>
+      </form> 
       <form id="edit-form" class="hide">
-        <p>Edite sua tarefa</p>
+        <p>Edite a sua tarefa:</p>
         <div class="form-control">
-          <input type="text" id="edit-input" />
+          <input type="text" id="edit-input">
           <button type="submit">
-            <i class="fa-solid fa-check-double"></i>
+            <i class="fa-solid fa-square-check"></i>
           </button>
         </div>
         <button id="cancel-edit-btn">Cancelar</button>
       </form>
       <div id="toolbar">
         <div id="search">
-          <h4>Pesquisar:</h4>
+          <h4>Pequisar:</h4>
           <form>
-            <input type="text" id="search-input" placeholder="Buscar..." />
+            <input type="text" id="search-input" placeholder="Buscar">
             <button id="erase-button">
               <i class="fa-solid fa-delete-left"></i>
             </button>
@@ -63,10 +63,21 @@
         </div>
       </div>
       <div id="todo-list">
-        
-          
-          <div class="todo">
-          <h3>Estou fazendo algo aqui...</h3>
+        <div class="todo done">
+          <h3>Estou fazendo alguma coisa...</h3>
+          <button class="finish-todo">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="edit-todo">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+          <button class="remove-todo">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="todo">
+          <h3>Estudar Javascript</h3>
           <button class="finish-todo">
             <i class="fa-solid fa-check"></i>
           </button>
